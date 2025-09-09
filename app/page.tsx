@@ -7,6 +7,7 @@ interface EstoqueItem {
   veiculo: string
   op: string
   local: string
+  tipo_peca: string
 }
 
 export default function Home() {
@@ -215,6 +216,15 @@ export default function Home() {
                         color: '#2c3e50',
                         borderBottom: '2px solid #dee2e6'
                       }}>
+                        Tipo de Peça
+                      </th>
+                      <th style={{
+                        padding: '16px',
+                        textAlign: 'left',
+                        fontWeight: '600',
+                        color: '#2c3e50',
+                        borderBottom: '2px solid #dee2e6'
+                      }}>
                         Local
                       </th>
                     </tr>
@@ -242,6 +252,12 @@ export default function Home() {
                           borderBottom: '1px solid #dee2e6'
                         }}>
                           {item.op}
+                        </td>
+                        <td style={{
+                          padding: '16px',
+                          borderBottom: '1px solid #dee2e6'
+                        }}>
+                          {item.tipo_peca}
                         </td>
                         <td style={{
                           padding: '16px',

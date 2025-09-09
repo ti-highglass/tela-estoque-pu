@@ -6,7 +6,7 @@ export async function GET(request: NextRequest) {
   const search = searchParams.get('search') || ''
 
   try {
-    let query = 'SELECT projeto, veiculo, op, local FROM estoque_pu'
+    let query = 'SELECT projeto, veiculo, op, local, peca FROM estoque_pu'
     let params: string[] = []
 
     if (search) {
