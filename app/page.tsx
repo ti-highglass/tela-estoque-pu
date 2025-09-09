@@ -7,7 +7,7 @@ interface EstoqueItem {
   veiculo: string
   op: string
   local: string
-  tipo_peca: string
+  peca: string
 }
 
 export default function Home() {
@@ -257,7 +257,7 @@ export default function Home() {
                           padding: '16px',
                           borderBottom: '1px solid #dee2e6'
                         }}>
-                          {item.tipo_peca}
+                          {item.peca}
                         </td>
                         <td style={{
                           padding: '16px',
